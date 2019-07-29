@@ -19,3 +19,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/events', 'EventsController@index')->name('events');
+Route::get('/events/new', 'EventsController@edit')->name('events.edit');
+Route::post('/events/store', 'EventsController@store')->name('events.store');
